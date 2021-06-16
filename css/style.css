@@ -1,0 +1,65 @@
+:root {
+  --primaryBg: #111111;
+  --secondaryBg: #1f1f1f;
+  --primaryFont: #d9faff;
+  --secondaryFont: #00bbf0;
+}
+
+body {
+  background-color: var(--primaryBg);
+  height: 90vh;
+}
+
+.button {
+  background-color: var(--secondaryFont);
+  color: var(--primaryFont);
+}
+
+input,
+select,
+textarea {
+  background-color: var(--secondaryBg) !important;
+  border: none !important;
+  color: var(--primaryFont) !important;
+  resize: none;
+}
+
+/* scrol bar 
+ */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondaryFont);
+  border-radius: 10px;
+}
+
+#customParams {
+  display: none;
+}
+#status {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--secondaryFont);
+  color: var(--primaryFont);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  padding: 3px 8px;
+  font-size: 20px;
+}
+
+.output {
+  position: relative;
+}
